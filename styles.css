@@ -1,0 +1,122 @@
+/* Общие стили */
+*{
+    color: white;
+}
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100svh;
+    background: url(images/backabout.jpg);
+    background-position: center;
+    z-index: -10;
+    font-size: 20px;
+}
+
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Здесь 0.5 - это уровень прозрачности (от 0 до 1) */
+    z-index: -5;
+  }
+
+header {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Специфичные стили для каждой страницы */
+.hero {
+    background-image: url(images/hero.jpg);
+    background-size: cover;
+    text-align: center;
+    padding: 40px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.feature {
+    flex: 1;
+    text-align: center;
+}
+
+.feature img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 5%;
+}
+
+.about {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.aboutText{
+    width: 50vw;
+    align-self: center;
+}
+
+.issues {
+    margin-top: 50px;
+}
+
+.contact {
+    margin-top: 50px;
+}
+
+.contact ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.contact li {
+    margin-bottom: 10px;
+}
+
