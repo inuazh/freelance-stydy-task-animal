@@ -1,14 +1,47 @@
 /* Общие стили */
-*{
+* {
     color: white;
 }
 
 body {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
     height: 100svh;
     background: url(images/backabout.jpg);
+    background-position: center;
+    z-index: -10;
+    font-size: 20px;
+}
+
+.about_body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100svh;
+    background: url(images/back2.jpg);
+    background-position: center;
+    z-index: -10;
+    font-size: 20px;
+}
+
+.about_contact {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100svh;
+    background: url(images/back4.jpg);
+    background-size: cover;
+    z-index: -10;
+    font-size: 20px;
+}
+
+.about_issues {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100svh;
+    background: url(images/issues.jpg);
     background-position: center;
     z-index: -10;
     font-size: 20px;
@@ -22,9 +55,10 @@ body::before {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Здесь 0.5 - это уровень прозрачности (от 0 до 1) */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Здесь 0.5 - это уровень прозрачности (от 0 до 1) */
     z-index: -5;
-  }
+}
 
 header {
     background-color: #333;
@@ -97,7 +131,7 @@ footer {
 
 }
 
-.aboutText{
+.aboutText {
     width: 50vw;
     align-self: center;
 }
@@ -119,4 +153,3 @@ footer {
 .contact li {
     margin-bottom: 10px;
 }
-
